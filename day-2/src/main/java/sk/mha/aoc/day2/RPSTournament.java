@@ -20,10 +20,10 @@ public class RPSTournament {
         return play(inputFilePath, parts -> RPSMatch.forOutcome(Hand.get(parts[0]), Outcome.get(parts[1])));
     }
 
-    private static long play(Path inputFilePath, Function<String[], RPSMatch> rpsMatchFunction) throws IOException {
+    private static long play(Path inputFilePath, Function<String[], RPSMatch> inputParserFunction) throws IOException {
         try (Stream<String> lines = Files.lines(inputFilePath)) {
             return lines.map(line -> line.split(" "))
-                .map(rpsMatchFunction)
+                .map(inputParserFunction)
                 .mapToLong(match -> match.yourHand().getRewardPoints() + match.outcome().getRewardPoints())
                 .sum();
         }
