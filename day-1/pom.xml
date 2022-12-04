@@ -11,5 +11,5 @@
     </parent>
 
     <artifactId>day-1</artifactId>
-    <name>Advent of Code - Day 1</name>
+    <name>Day 1</name>
 </project>

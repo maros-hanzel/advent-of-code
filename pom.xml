@@ -9,7 +9,7 @@
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>Advent of Code - Parent</name>
+    <name>Advent of Code 2022</name>
 
     <modules>
         <module>day-1</module>
