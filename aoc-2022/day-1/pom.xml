@@ -12,12 +12,4 @@
 
     <artifactId>day-1</artifactId>
     <name>Day 1</name>
-
-    <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>puzzle-commons</artifactId>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 </project>

@@ -11,29 +11,14 @@
         <relativePath/>
     </parent>
 
-    <artifactId>aoc-bom</artifactId>
-    <version>${revision}</version>
-    <packaging>pom</packaging>
-
-    <name>Advent of Code</name>
-
-    <properties>
-        <revision>2021</revision>
-        <puzzle-solver.version>1.0</puzzle-solver.version>
-    </properties>
+    <artifactId>puzzle-test-commons</artifactId>
+    <name>Puzzle Test Commons</name>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>puzzle-commons</artifactId>
-            <version>${puzzle-solver.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>puzzle-test-commons</artifactId>
-            <version>${puzzle-solver.version}</version>
-            <scope>test</scope>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>
