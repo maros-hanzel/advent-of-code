@@ -14,6 +14,10 @@ public final class PuzzleTester {
         // private constructor to prevent instantiation
     }
 
+    public static <T> void test(Supplier<PuzzleAPI<T>> puzzleSupplier, T expectedAnswer) {
+        test(puzzleSupplier, "test.input", expectedAnswer);
+    }
+
     public static <T> void test(@NonNull Supplier<PuzzleAPI<T>> puzzleSupplier, @NonNull String inputFile, @NonNull T expectedAnswer) {
         PuzzleAPI<T> puzzle = puzzleSupplier.get();
         if (null == puzzle) {
