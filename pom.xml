@@ -5,44 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>sk.mha.aoc</groupId>
-    <artifactId>aoc-parent</artifactId>
-    <version>${revision}</version>
+    <artifactId>parent</artifactId>
+    <version>1.0</version>
     <packaging>pom</packaging>
 
-    <name>Advent of Code 2022</name>
-
     <modules>
-        <module>day-1</module>
-        <module>day-2</module>
+        <module>puzzle-solver-bom</module>
+        <module>puzzle-commons</module>
+        <module>aoc-2022</module>
+        <module>puzzle-solver</module>
     </modules>
-
-    <properties>
-        <revision>1.0</revision>
-        <java.version>17</java.version>
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <junit-jupiter.version>5.9.1</junit-jupiter.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>${junit-jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
