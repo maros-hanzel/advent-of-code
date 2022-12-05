@@ -17,28 +17,13 @@
 
     <name>Advent of Code</name>
 
-    <modules>
-        <module>day-1</module>
-        <module>day-2</module>
-    </modules>
-
     <properties>
-        <revision>2022</revision>
+        <revision>2021</revision>
         <puzzle-commons.version>1.0</puzzle-commons.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>day-1</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>day-2</artifactId>
-                <version>${project.version}</version>
-            </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>puzzle-commons</artifactId>

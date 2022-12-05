@@ -12,6 +12,7 @@
     <modules>
         <module>puzzle-solver-bom</module>
         <module>puzzle-commons</module>
+        <module>aoc-2021</module>
         <module>aoc-2022</module>
         <module>puzzle-solver</module>
     </modules>
