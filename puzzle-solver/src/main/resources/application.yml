@@ -1,6 +1,6 @@
 logging:
   level:
-    sk.mha.aoc: debug
+    sk.mha.aoc: info
 spring:
   main:
     banner-mode: off
