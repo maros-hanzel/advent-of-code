@@ -14,6 +14,6 @@ import java.util.List;
 public class CorrectRulesRPSTournament extends AbstractRPSTournament {
     @Override
     public Long solve(List<String> input) {
-        return play(input, parts -> RPSMatch.forOutcome(Hand.get(parts[0]), Outcome.get(parts[1])));
+        return play(input, pair -> RPSMatch.forOutcome(Hand.get(pair.left()), Outcome.get(pair.right())));
     }
 }

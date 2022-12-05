@@ -1,5 +1,6 @@
 package sk.mha.aoc.day2.data;
 
+import sk.mha.aoc.data.Pair;
 import sk.mha.aoc.day2.constant.Hand;
 import sk.mha.aoc.day2.constant.Outcome;
 
@@ -11,6 +12,10 @@ public record RPSMatch(Hand opponentsHand, Hand yourHand) {
         Hand.SCISSORS, Hand.PAPER,
         Hand.PAPER, Hand.ROCK
     );
+
+    public RPSMatch(Pair<Hand> pair) {
+        this(pair.left(), pair.right());
+    }
 
     public static RPSMatch forOutcome(Hand opponentsHand, Outcome outcome) {
         return switch (outcome) {

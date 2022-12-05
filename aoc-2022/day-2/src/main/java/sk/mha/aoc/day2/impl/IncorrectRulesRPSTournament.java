@@ -13,6 +13,6 @@ import java.util.List;
 public class IncorrectRulesRPSTournament extends AbstractRPSTournament {
     @Override
     public Long solve(List<String> input) {
-        return play(input, parts -> new RPSMatch(Hand.get(parts[0]), Hand.get(parts[1])));
+        return play(input, pair -> new RPSMatch(pair.map(Hand::get)));
     }
 }
