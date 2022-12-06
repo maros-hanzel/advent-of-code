@@ -1,8 +1,8 @@
-package sk.mha.aoc.day4;
+package sk.mha.aoc.day5;
 
 import org.junit.jupiter.api.Test;
-import sk.mha.aoc.day4.impl.CrateMover9000;
-import sk.mha.aoc.day4.impl.CrateMover9001;
+import sk.mha.aoc.day5.impl.CrateMover9000;
+import sk.mha.aoc.day5.impl.CrateMover9001;
 import sk.mha.aoc.test.PuzzleTester;
 
 class SupplyStackPuzzleTest {

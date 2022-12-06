@@ -1,9 +1,9 @@
-package sk.mha.aoc.day4.impl;
+package sk.mha.aoc.day5.impl;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import sk.mha.aoc.data.Pair;
-import sk.mha.aoc.day4.AbstractSupplyStacksPuzzle;
+import sk.mha.aoc.day5.AbstractSupplyStacksPuzzle;
 
 import java.util.Comparator;
 import java.util.function.Supplier;

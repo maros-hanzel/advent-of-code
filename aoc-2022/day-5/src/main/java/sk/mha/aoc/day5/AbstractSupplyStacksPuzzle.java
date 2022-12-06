@@ -1,7 +1,7 @@
-package sk.mha.aoc.day4;
+package sk.mha.aoc.day5;
 
 import sk.mha.aoc.api.PuzzleAPI;
-import sk.mha.aoc.day4.data.MoveCommand;
+import sk.mha.aoc.day5.data.MoveCommand;
 
 import java.util.*;
 import java.util.function.Supplier;
