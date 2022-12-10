@@ -9,6 +9,8 @@ import sk.mha.aoc.api.PuzzleAPI;
 import sk.mha.aoc.solver.util.PuzzleInputLoader;
 
 import java.io.IOException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.List;
 
 @Log4j2
@@ -28,9 +30,15 @@ public class PuzzleSolver implements CommandLineRunner {
     public void run(String... args) throws IOException {
         log.debug("Autowired {} puzzles", puzzles::size);
         for (PuzzleAPI<?> puzzle : puzzles) {
+            String puzzleName = puzzle.getClass().getSimpleName();
             List<String> puzzleInput = puzzleInputLoader.loadInput(puzzle.day());
+
+            Instant start = Instant.now();
             Object answer = puzzle.solve(puzzleInput);
-            log.info("Day-{} puzzle {} answer is: {}", puzzle.day(), puzzle.getClass().getSimpleName(), answer);
+            Duration executionTime = Duration.between(start, Instant.now());
+
+            log.debug("Day-{} puzzle {} solved in {} ms", puzzle.day(), puzzleName, executionTime.toMillis());
+            log.info("Day-{} puzzle {} answer is: {}", puzzle.day(), puzzleName, answer);
         }
     }
 
